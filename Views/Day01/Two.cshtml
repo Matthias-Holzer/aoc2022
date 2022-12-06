@@ -1,0 +1,13 @@
+@model List<int>
+
+<h1>Maximum</h1>
+@{
+    var x = Model.Take(3).Sum();
+}
+<pre>@x</pre>
+
+<h1>Liste aller Summen</h1>
+@foreach (int sum in Model)
+{
+    <pre>@sum</pre>
+}

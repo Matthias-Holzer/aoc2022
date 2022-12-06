@@ -1,0 +1,10 @@
+@model List<int>
+
+<h1>Maximum</h1>
+<p>@Model.Max()</p>
+
+<h1>Input</h1>
+@foreach(int s in Model)
+{
+    <pre>@s</pre>
+}
